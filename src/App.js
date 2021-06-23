@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  // function that targets body and adds an dataset attribute.
+  // The attribute will be either 'light' or 'dark'
+  const setTheme = () => {
+    let dataThemeAttribute = "data-theme";
+    const body = document.body;
+    let newTheme =
+      body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
+    body.setAttribute(dataThemeAttribute, newTheme);
+  };
+
+  return <div className="App">Testing scss and js functionality
+  
+    <button onClick={setTheme}>Click to change theme</button>
+  </div>;
 }
 
 export default App;
