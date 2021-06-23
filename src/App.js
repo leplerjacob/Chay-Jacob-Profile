@@ -3,6 +3,8 @@ import "./App.scss";
 function App() {
   // function that targets body and adds an dataset attribute.
   // The attribute will be either 'light' or 'dark'
+
+  // test
   const setTheme = () => {
     let dataThemeAttribute = "data-theme";
     const body = document.body;
