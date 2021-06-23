@@ -5,6 +5,8 @@ function App() {
   // The attribute will be either 'light' or 'dark'
 
   // test
+
+  // test from jacob
   const setTheme = () => {
     let dataThemeAttribute = "data-theme";
     const body = document.body;
