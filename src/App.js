@@ -15,10 +15,17 @@ function App() {
     body.setAttribute(dataThemeAttribute, newTheme);
   };
 
-  return <div className="App">Testing scss and js functionality
-  
-    <button onClick={setTheme}>Click to change theme</button>
-  </div>;
+  return (
+    <div className="app">
+      <div className="left" data-theme="light"></div>
+      <div className="button">
+        <button onClick={setTheme}>
+          Click to change theme
+        </button>
+      </div>
+      <div className="right" data-theme="dark"></div>
+    </div>
+  );
 }
 
 export default App;
